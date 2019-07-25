@@ -75,20 +75,6 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
-    "clean-target-local-static": "rm -rf ../turbot-core/lib/@turbot/server-api/static && mkdir ../turbot-core/lib/@turbot/server-api/static",
-    "clean-target-static": "rm -rf ../turbot-core/dist/build/static/*",
-    "copy": "npm run clean-target-static && npm run copy-to-target-static",
-    "copy-local": "npm run clean-target-local-static && npm run copy-to-target-local-static",
-    "copy-to-target-local-static": "cp -R build/* ../turbot-core/lib/@turbot/server-api/static/",
-    "copy-to-target-static": "mkdir -p ../turbot-core/dist/build/static/ && cp -R build/* ../turbot-core/dist/build/static/",
-    "deploy": "npx npm-run-all -s update-repo build copy",
-    "deploy-local": "npx npm-run-all -s update-repo build copy-local",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "update-repo": "git pull && npm install",
     "storybook": "start-storybook"
   },
   "eslintConfig": {
