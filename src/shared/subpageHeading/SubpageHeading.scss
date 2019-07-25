@@ -1,0 +1,11 @@
+.Subpage-heading {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  overflow: auto;
+  &__typography {
+    float: left;
+  }
+  &__actions {
+    float: right;
+  }
+}

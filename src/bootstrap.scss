@@ -1,0 +1,9 @@
+$green: #548235;
+
+// primary -> theme.palatte.secondary.dark
+$theme-colors: (
+  "primary": #0b69b9
+);
+
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";

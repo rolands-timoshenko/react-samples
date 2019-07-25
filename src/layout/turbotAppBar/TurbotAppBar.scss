@@ -1,0 +1,27 @@
+div[class^="TurbotAppBar"] {
+  input[class^="SearchBox-textField"] {
+    &::-webkit-input-placeholder {
+      padding-left: 2px !important;
+    }
+
+    &:-moz-placeholder {
+      padding-left: 2px !important;
+    }
+
+    &::-moz-placeholder {
+      padding-left: 2px !important;
+    }
+
+    &:-ms-input-placeholder {
+      padding-left: 2px !important;
+    }
+
+    &::-ms-input-placeholder {
+      padding-left: 2px !important;
+    }
+
+    &::placeholder {
+      padding-left: 2px !important;
+    }
+  }
+}

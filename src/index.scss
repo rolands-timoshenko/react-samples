@@ -1,0 +1,75 @@
+html {
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#root {
+  height: inherit;
+  width: inherit;
+}
+
+.splitter-layout {
+  .layout-splitter {
+    background-color: #ddd !important;
+    width: 2px !important;
+  }
+}
+
+.codeMarker {
+  background: #fff677;
+  position: absolute;
+  z-index: 20;
+}
+
+.list-item-action-button-active:hover {
+  background-color: #eee;
+}
+
+// Bootsrap fixes
+button:focus {
+  outline: none;
+}
+
+// Line height should be set back to default for bootstrap form fields
+.form-group {
+  line-height: 1.5;
+}
+
+pre {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  user-select: none;
+
+  input {
+    position: relative;
+    margin-top: 0;
+  }
+
+  label {
+    margin-left: 0.3rem;
+  }
+
+  & + .form-check {
+    margin-top: 0.3rem;
+  }
+}
